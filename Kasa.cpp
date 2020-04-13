@@ -42,7 +42,7 @@ void Kasa::dodaj(){
         cin >> a;
         cout<<"Ile banknotów/monet wpłacasz? " << endl;
         cin >> ilosc;
-        if(a == 20000) banknot_200 = banknot_200+ilosc;
+        if(a*100 == 20000) banknot_200 = banknot_200+ilosc;
         else if(a*100 == 10000) banknot_100 = banknot_100+ilosc;
         else if(a*100 == 5000) banknot_50 = banknot_50+ilosc;
         else if(a*100 == 2000) banknot_20 = banknot_20+ilosc;
@@ -65,7 +65,7 @@ void Kasa::odejmij(){
     if(!zamkniety){
         cout<<"Wypłać banknoty z kasy, wprowadź nominał w PLN (200, 100. 50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01) " << endl; cin >> a;
         cout<<"Ile banknotów/monet wypłacasz? " << endl; cin >> ilosc;
-        if(a == 20000) banknot_200 = banknot_200-ilosc;
+        if(a*100 == 20000) banknot_200 = banknot_200-ilosc;
         else if(a*100 == 10000) banknot_100 = banknot_100-ilosc;
         else if(a*100 == 5000) banknot_50 = banknot_50-ilosc;
         else if(a*100 == 2000) banknot_20 = banknot_20-ilosc;
